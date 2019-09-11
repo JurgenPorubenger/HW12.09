@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action='/all', method='POST')
+    p
+      | name:
+      input(type='text', name='name', value='')
+      |          model:
+      input(type='text', name='model', value='')
+    input(type='submit', value='Submit')
